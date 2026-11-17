@@ -43,12 +43,12 @@ A REST API for validating, storing, retrieving, and summarizing patient vital-si
 
 ## 4. Clinical NLP & Generative AI
 
-### [WHO Clinical Guidelines RAG Chatbot](./WHO-Guidelines-RAG-Chatbot/)
-A PDF-based RAG chatbot over three WHO clinical guideline documents. The notebook uses local PubMedBERT embeddings, ChromaDB retrieval, and Groq answer generation. It evaluates a baseline and three retrieval/prompting experiments using LLM-as-a-Judge scores for faithfulness, relevance, and completeness.
+### [Medical Guidelines RAG Chatbot](https://github.com/duaajaved321/Medical-Guidelines-RAG-Chatbot)
+A PDF-based RAG chatbot built over three WHO clinical guideline documents. Uses PyPDF for page-wise extraction with source metadata, local PubMedBERT embeddings, ChromaDB retrieval, and Groq for answer generation. Compares a baseline with three retrieval and prompting experiments, then evaluates faithfulness, relevance, and completeness using an LLM-as-a-Judge.
 
 **Technologies:** Python, Google Colab, PyPDF, Hugging Face Sentence Transformers, PubMedBERT, ChromaDB, LangChain Text Splitters, Groq API, OpenAI SDK, Pandas, Matplotlib.
 
-[Open the Google Colab notebook](https://colab.research.google.com/drive/1ddNzy2ZydDJKKHXpsoepCxX5Oeu1UicF?usp=sharing)
+[View the notebook in the repository](https://github.com/duaajaved321/Medical-Guidelines-RAG-Chatbot/blob/main/WHO_Guidelines_RAG_Chatbot_Groq_HF.ipynb) | [Open in Google Colab](https://colab.research.google.com/drive/1ddNzy2ZydDJKKHXpsoepCxX5Oeu1UicF?usp=sharing)
 
 ### [Regex Keyword Matching Data Extractor](https://github.com/duaajaved321/Regex-Keyword-Matching-Data-Extractor)
 Extract structured information from clinical notes, including note identifiers, age, symptoms, diagnoses, and medication mentions. Combines regular expressions and keyword/context matching with similarity-based techniques, then exports structured results.
