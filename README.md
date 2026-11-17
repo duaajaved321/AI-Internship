@@ -2,7 +2,7 @@
 
 A curated index of my AI internship projects, documenting practical work across healthcare data processing, clinical NLP, Generative AI, machine learning, APIs, and deployment.
 
-This repository acts as a central portfolio: each project remains in its own repository, and the links below take you directly to its source code, notebooks, documentation, and implementation details.
+This repository acts as a central portfolio: each project is organized in its own folder or linked to its dedicated repository, with source code, notebooks, documentation, and implementation details.
 
 ## Project Areas
 
@@ -42,6 +42,13 @@ A REST API for validating, storing, retrieving, and summarizing patient vital-si
 **Technologies:** Python, FastAPI, Pydantic, SQLite, Uvicorn, pytest, HTTPX.
 
 ## 4. Clinical NLP & Generative AI
+
+### [WHO Clinical Guidelines RAG Chatbot](./WHO-Guidelines-RAG-Chatbot/)
+A PDF-based RAG chatbot over three WHO clinical guideline documents. The notebook uses local PubMedBERT embeddings, ChromaDB retrieval, and Groq answer generation. It evaluates a baseline and three retrieval/prompting experiments using LLM-as-a-Judge scores for faithfulness, relevance, and completeness.
+
+**Technologies:** Python, Google Colab, PyPDF, Hugging Face Sentence Transformers, PubMedBERT, ChromaDB, LangChain Text Splitters, Groq API, OpenAI SDK, Pandas, Matplotlib.
+
+[Open the Google Colab notebook](https://colab.research.google.com/drive/1ddNzy2ZydDJKKHXpsoepCxX5Oeu1UicF?usp=sharing)
 
 ### [Regex Keyword Matching Data Extractor](https://github.com/duaajaved321/Regex-Keyword-Matching-Data-Extractor)
 Extract structured information from clinical notes, including note identifiers, age, symptoms, diagnoses, and medication mentions. Combines regular expressions and keyword/context matching with similarity-based techniques, then exports structured results.
@@ -113,13 +120,13 @@ Serve a trained machine-learning pipeline through a FastAPI prediction endpoint.
 
 - **Programming and data:** Python, Pandas, NumPy, CSV processing, SQL, SQLite
 - **Machine learning:** scikit-learn, PyTorch, classification, regression, feature engineering, cross-validation, model evaluation
-- **Clinical NLP and GenAI:** regular expressions, NLTK, Word2Vec, Gemini API, prompt engineering, structured LLM outputs
+- **Clinical NLP and GenAI:** regular expressions, NLTK, Word2Vec, Gemini API, Groq API, RAG, embeddings, vector search, prompt engineering, LLM-as-a-Judge evaluation
 - **Applications and APIs:** Streamlit, FastAPI, REST APIs, Pydantic, Uvicorn
 - **Deployment and testing:** Docker, Docker Compose, pytest, HTTPX, model serialization, logging
 - **Visualization:** Matplotlib, Seaborn, Streamlit charts
 
 ## Notes
 
-- Each linked repository contains its own implementation and project-specific documentation.
+- Each project folder or linked repository contains its own implementation and project-specific documentation.
 - These are learning and engineering projects, not clinically validated medical devices or sources of medical advice.
-- Patient examples and records used in these projects are synthetic or drawn from public datasets, as described in the individual repositories. Do not upload private or identifiable patient information.
+- Patient examples and records used in these projects are synthetic or drawn from public datasets, as described in the individual projects. Do not upload private or identifiable patient information.
